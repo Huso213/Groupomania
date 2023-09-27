@@ -41,19 +41,21 @@
 
 
 }
+
 /*bouton inscription*/
+
 .inscription{
-  position:absolute;
-
+  width:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.inscription button{
-  width: 100%;
 
-}
-.inscription button a{
+.inscription a {
   width: max-content;
-  
-}
+  color: $orange;
+  font-size: 1.2em;
+  }
 
 
 
@@ -66,7 +68,7 @@
   position: relative;
   align-items: center;
   background-color: #FFD7D7;
-margin-top: 5em;
+  margin-top: 3em;
 }
 
 .footerdescription {
@@ -77,7 +79,8 @@ margin-top: 5em;
 
 
 }
-.footerdescription span{
+
+.footerdescription span {
   color: black;
 }
 
@@ -85,3 +88,57 @@ h4 img {
   width: 10em;
   height: 10em;
 }
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MEDIA QUERY *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+@media all and (max-width: 1350px) {
+  .logo{
+ margin-top: 4em;
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+  .logo{
+ margin: 150px 0 100px 0;
+  }
+  .footer{
+    margin-top:10em;
+    height: 100px;
+  }
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version mobile*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+@media all and (max-width: 768px) {
+ 
+  .connection{
+    width: 95%;
+  }
+.mail{
+  width: 30%;
+}
+.motpasse{
+  width: 30%;  
+}
+.seconnecter{
+  width: 30%;
+}
+
+.inscription{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 10em;
+
+}
+
+
+}
+
+@media all and (max-width: 585px) {
+ .connection{
+  width: 100%;
+  font-size: 1em;
+ }
+
+}
+
+
